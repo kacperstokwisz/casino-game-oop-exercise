@@ -3,7 +3,7 @@ class Wallet {
         let _money = money;
         //pobieranie aktualnej zawartości portfela
         this.getWalletBalance = function(){
-            return _money
+            return _money;
         }
 
         //sprawdznie czy użytkownik ma odpowiednią ilość środków
@@ -23,10 +23,10 @@ class Wallet {
                 } else if (type === "-"){
                     return _money -= value;
                 } else {
-                    throw new Error('Nieprawidłowy typ działania')
+                    throw new Error('Nieprawidłowy typ działania');
                 }
             } else {
-                throw new Error('nieprawidłowa liczba')
+                throw new Error('nieprawidłowa liczba');
             }
         }
     }
